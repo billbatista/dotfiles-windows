@@ -27,7 +27,7 @@
     {
         "defaults":
         {
-            "fontFace": "agave NF r",
+            "fontFace": "MesloLGM NF",
             "cursorShape": "filledBox"
         },
         "list":

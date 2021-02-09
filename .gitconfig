@@ -5,11 +5,11 @@
 [alias]
 	co = checkout
 	cob = checkout -b
-	lg = log --all --graph --decorate --oneline --abbrev-commit
 	pf = !git pull && git fetch --prune
 	cm = !git add -A && git commit -m
-	save = !git add -A && git commit -m 'chore: commit save point'
-	done = !git push origin HEAD
+	save = !git add -A && git commit -m 'chore: commit checkpoint'
+	done = !git push --set-upstream origin HEAD
+	donef = !git push -f --set-upstream origin HEAD
 	del = branch -D
 	br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
 	lg = !git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30

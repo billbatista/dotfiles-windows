@@ -7,11 +7,9 @@
       "segments": [
         {
           "type": "session",
-          "style": "diamond",
+          "style": "powerline",
           "foreground": "#ffffff",
           "background": "#c386f1",
-          "leading_diamond": "\uE0B6",
-          "trailing_diamond": "\uE0B0",
           "properties": {
             "display_host": false
           }
