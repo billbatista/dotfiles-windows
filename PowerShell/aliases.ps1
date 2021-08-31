@@ -16,6 +16,9 @@ ${function:sources} = { Set-Location ~\sources }
 # Missing Bash aliases
 Set-Alias time Measure-Command
 
+# If using vscodium
+Set-Alias code codium
+
 # curl: Use `curl.exe` if available
 if (Get-Command curl.exe -ErrorAction SilentlyContinue | Test-Path) {
     Remove-Item alias:curl -ErrorAction SilentlyContinue
